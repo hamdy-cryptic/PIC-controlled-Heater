@@ -1,0 +1,666 @@
+[p GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"9 C:\Users\sony\MPLABXProjects\PROJ.X\adc.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"15
+[v _ADC_Read ADC_Read `(us  1 e 2 0 ]
+"28
+[v _temperature_read temperature_read `(us  1 e 2 0 ]
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"62 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"44 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"6 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"7 C:\Users\sony\MPLABXProjects\PROJ.X\eeprom.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"11 C:\Users\sony\MPLABXProjects\PROJ.X\heater.c
+[v _check_temp check_temp `(v  1 e 1 0 ]
+"41
+[v _save_temp save_temp `(v  1 e 1 0 ]
+"50
+[v _temp_setting_up temp_setting_up `(v  1 e 1 0 ]
+"60
+[v _temp_setting_down temp_setting_down `(v  1 e 1 0 ]
+"68
+[v _set_temp_off set_temp_off `(v  1 e 1 0 ]
+"75
+[v _check_active_button check_active_button `(v  1 e 1 0 ]
+"95
+[v _off off `(v  1 e 1 0 ]
+"105
+[v _alternate_on_off alternate_on_off `(v  1 e 1 0 ]
+"8 C:\Users\sony\MPLABXProjects\PROJ.X\i2c.c
+[v _i2c_master_init i2c_master_init `(v  1 e 1 0 ]
+"22
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+"27
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+"32
+[v _i2c_restart i2c_restart `(v  1 e 1 0 ]
+"37
+[v _i2c_wait i2c_wait `(v  1 e 1 0 ]
+"47
+[v _i2c_nack i2c_nack `(v  1 e 1 0 ]
+"53
+[v _i2c_write_slave_address_with_write_req i2c_write_slave_address_with_write_req `(uc  1 e 1 0 ]
+"61
+[v _i2c_write_slave_address_with_read_req i2c_write_slave_address_with_read_req `(uc  1 e 1 0 ]
+"69
+[v _i2c_master_write i2c_master_write `(uc  1 e 1 0 ]
+"77
+[v _i2c_master_read i2c_master_read `(uc  1 e 1 0 ]
+"22 C:\Users\sony\MPLABXProjects\PROJ.X\main.c
+[v _isr isr `II(v  1 e 1 0 ]
+"48
+[v _main main `(v  1 e 1 0 ]
+"9 C:\Users\sony\MPLABXProjects\PROJ.X\ssd.c
+[v _segment_display segment_display `(v  1 e 1 0 ]
+"23
+[v _segment_display_off segment_display_off `(v  1 e 1 0 ]
+"33
+[v _segment_display_blink segment_display_blink `(v  1 e 1 0 ]
+"42
+[v _set_blink set_blink `(v  1 e 1 0 ]
+"46
+[v _alternate alternate `(v  1 e 1 0 ]
+"7 C:\Users\sony\MPLABXProjects\PROJ.X\timer.c
+[v _multiply multiply `(ul  1 e 4 0 ]
+"22
+[v _set_timer1 set_timer1 `(v  1 e 1 0 ]
+"60
+[v _set_timer2 set_timer2 `(v  1 e 1 0 ]
+"100
+[v _set_timer0 set_timer0 `(v  1 e 1 0 ]
+"139
+[v _stop_timer stop_timer `(v  1 e 1 0 ]
+[v i1_stop_timer stop_timer `(v  1 e 1 0 ]
+"156
+[v _restart_timer restart_timer `(v  1 e 1 0 ]
+"173
+[v _start_timer start_timer `(v  1 e 1 0 ]
+"200
+[v _timer_ISR timer_ISR `(uc  1 e 1 0 ]
+"10 C:\Users\sony\MPLABXProjects\PROJ.X\adc.h
+[v _AN0RES AN0RES `us  1 e 2 0 ]
+"11
+[v _Voltage Voltage `f  1 e 3 0 ]
+"59 E:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"166
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"634
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"730
+[v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S221 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1190
+[s S227 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S235 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S238 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S241 . 1 `S221 1 . 1 0 `S227 1 . 1 0 `S235 1 . 1 0 `S238 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES241  1 e 1 @31 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2575
+[v _GO_DONE GO_DONE `VEb  1 e 0 @250 ]
+"2599
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"2602
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"2605
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2635
+[v _PS0 PS0 `VEb  1 e 0 @1032 ]
+"2638
+[v _PS1 PS1 `VEb  1 e 0 @1033 ]
+"2641
+[v _PS2 PS2 `VEb  1 e 0 @1034 ]
+"2644
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"2668
+[v _RA4 RA4 `VEb  1 e 0 @44 ]
+"2671
+[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"2677
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2686
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"2689
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"2710
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"2719
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2806
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2818
+[v _SSPEN SSPEN `VEb  1 e 0 @165 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2827
+[v _SSPM0 SSPM0 `VEb  1 e 0 @160 ]
+"2830
+[v _SSPM1 SSPM1 `VEb  1 e 0 @161 ]
+"2833
+[v _SSPM2 SSPM2 `VEb  1 e 0 @162 ]
+"2836
+[v _SSPM3 SSPM3 `VEb  1 e 0 @163 ]
+"2845
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"2854
+[v _T0SE T0SE `VEb  1 e 0 @1036 ]
+"2857
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"2860
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"2866
+[v _T1OSCEN T1OSCEN `VEb  1 e 0 @131 ]
+"2872
+[v _T2CKPS0 T2CKPS0 `VEb  1 e 0 @144 ]
+"2875
+[v _T2CKPS1 T2CKPS1 `VEb  1 e 0 @145 ]
+"2878
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"2881
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"2884
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"2887
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"2890
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"2893
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"2896
+[v _TMR2IE TMR2IE `VEb  1 e 0 @1121 ]
+"2899
+[v _TMR2IF TMR2IF `VEb  1 e 0 @97 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"2905
+[v _TOUTPS0 TOUTPS0 `VEb  1 e 0 @147 ]
+"2908
+[v _TOUTPS1 TOUTPS1 `VEb  1 e 0 @148 ]
+"2911
+[v _TOUTPS2 TOUTPS2 `VEb  1 e 0 @149 ]
+"2914
+[v _TOUTPS3 TOUTPS3 `VEb  1 e 0 @150 ]
+"2938
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"13 C:\Users\sony\MPLABXProjects\PROJ.X\heater.h
+[v _temp_set temp_set `uc  1 e 1 0 ]
+"14
+[v _past_temps past_temps `[10]uc  1 e 10 0 ]
+"15
+[v _index index `uc  1 e 1 0 ]
+"16
+[v _temp_setting_mode temp_setting_mode `uc  1 e 1 0 ]
+"17
+[v _ON_OFF_FLAG ON_OFF_FLAG `uc  1 e 1 0 ]
+"17 C:\Users\sony\MPLABXProjects\PROJ.X\main.c
+[v _temperature temperature `us  1 e 2 0 ]
+"11 C:\Users\sony\MPLABXProjects\PROJ.X\ssd.h
+[v _blink blink `uc  1 e 1 0 ]
+"7 C:\Users\sony\MPLABXProjects\PROJ.X\timer.h
+[v _T1 T1 `uc  1 e 1 0 ]
+"8
+[v _counter1 counter1 `*.4uc  1 e 1 0 ]
+"9
+[v _TMR1_REG TMR1_REG `*.4ui  1 e 1 0 ]
+"10
+[v _T2 T2 `uc  1 e 1 0 ]
+"11
+[v _counter2 counter2 `*.4uc  1 e 1 0 ]
+"12
+[v _TMR2_REG TMR2_REG `*.4uc  1 e 1 0 ]
+"13
+[v _T0 T0 `uc  1 e 1 0 ]
+"14
+[v _counter0 counter0 `*.4uc  1 e 1 0 ]
+"15
+[v _TMR0_REG TMR0_REG `*.4uc  1 e 1 0 ]
+"48 C:\Users\sony\MPLABXProjects\PROJ.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"93
+} 0
+"33 C:\Users\sony\MPLABXProjects\PROJ.X\ssd.c
+[v _segment_display_blink segment_display_blink `(v  1 e 1 0 ]
+{
+[v segment_display_blink@x x `us  1 p 2 32 ]
+"40
+} 0
+"9
+[v _segment_display segment_display `(v  1 e 1 0 ]
+{
+"11
+[v segment_display@binary_pattern binary_pattern `[10]uc  1 a 10 18 ]
+"10
+[v segment_display@a2 a2 `ui  1 a 2 30 ]
+[v segment_display@a1 a1 `ui  1 a 2 28 ]
+"9
+[v segment_display@x x `us  1 p 2 12 ]
+"10
+[v segment_display@F864 F864 `[10]uc  1 s 10 F864 ]
+"21
+} 0
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 11 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 7 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 9 ]
+"25
+} 0
+"95 C:\Users\sony\MPLABXProjects\PROJ.X\heater.c
+[v _off off `(v  1 e 1 0 ]
+{
+"101
+} 0
+"23 C:\Users\sony\MPLABXProjects\PROJ.X\ssd.c
+[v _segment_display_off segment_display_off `(v  1 e 1 0 ]
+{
+"31
+} 0
+"11 C:\Users\sony\MPLABXProjects\PROJ.X\heater.c
+[v _check_temp check_temp `(v  1 e 1 0 ]
+{
+"14
+[v check_temp@i i `uc  1 a 1 13 ]
+"13
+[v check_temp@avg avg `us  1 a 2 11 ]
+"12
+[v check_temp@sum sum `us  1 a 2 9 ]
+"37
+} 0
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"75 C:\Users\sony\MPLABXProjects\PROJ.X\heater.c
+[v _check_active_button check_active_button `(v  1 e 1 0 ]
+{
+"91
+} 0
+"50
+[v _temp_setting_up temp_setting_up `(v  1 e 1 0 ]
+{
+"56
+} 0
+"60
+[v _temp_setting_down temp_setting_down `(v  1 e 1 0 ]
+{
+"64
+} 0
+"139 C:\Users\sony\MPLABXProjects\PROJ.X\timer.c
+[v _stop_timer stop_timer `(v  1 e 1 0 ]
+{
+[v stop_timer@timer timer `uc  1 a 1 wreg ]
+[v stop_timer@timer timer `uc  1 a 1 wreg ]
+[v stop_timer@timer timer `uc  1 a 1 0 ]
+"152
+} 0
+"173
+[v _start_timer start_timer `(v  1 e 1 0 ]
+{
+[v start_timer@timer timer `uc  1 a 1 wreg ]
+[v start_timer@timer timer `uc  1 a 1 wreg ]
+[v start_timer@time time `us  1 p 2 32 ]
+[v start_timer@timer timer `uc  1 a 1 34 ]
+"196
+} 0
+"60
+[v _set_timer2 set_timer2 `(v  1 e 1 0 ]
+{
+"77
+[v set_timer2@i i `us  1 a 2 30 ]
+"62
+[v set_timer2@Time Time `ul  1 a 4 24 ]
+"74
+[v set_timer2@resolution resolution `us  1 a 2 28 ]
+"60
+[v set_timer2@time time `us  1 p 2 20 ]
+"63
+[v set_timer2@tmr2 tmr2 `uc  1 s 1 tmr2 ]
+"64
+[v set_timer2@cntr2 cntr2 `uc  1 s 1 cntr2 ]
+"96
+} 0
+"22
+[v _set_timer1 set_timer1 `(v  1 e 1 0 ]
+{
+"36
+[v set_timer1@i i `ui  1 a 2 30 ]
+"24
+[v set_timer1@Time Time `ul  1 a 4 24 ]
+"33
+[v set_timer1@resolution resolution `ui  1 a 2 28 ]
+"22
+[v set_timer1@time time `us  1 p 2 20 ]
+"25
+[v set_timer1@tmr1 tmr1 `ui  1 s 2 tmr1 ]
+"26
+[v set_timer1@cntr1 cntr1 `uc  1 s 1 cntr1 ]
+"56
+} 0
+"100
+[v _set_timer0 set_timer0 `(v  1 e 1 0 ]
+{
+"115
+[v set_timer0@i i `us  1 a 2 30 ]
+"102
+[v set_timer0@Time Time `ul  1 a 4 24 ]
+"113
+[v set_timer0@resolution resolution `us  1 a 2 28 ]
+"100
+[v set_timer0@time time `us  1 p 2 20 ]
+"103
+[v set_timer0@tmr0 tmr0 `uc  1 s 1 tmr0 ]
+"104
+[v set_timer0@cntr0 cntr0 `uc  1 s 1 cntr0 ]
+"135
+} 0
+"7
+[v _multiply multiply `(ul  1 e 4 0 ]
+{
+"14
+[v multiply@i_321 i `us  1 a 2 14 ]
+"10
+[v multiply@i i `us  1 a 2 12 ]
+"8
+[v multiply@sum sum `ul  1 a 4 16 ]
+"7
+[v multiply@x x `us  1 p 2 0 ]
+[v multiply@y y `us  1 p 2 2 ]
+"18
+} 0
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"5
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"25
+} 0
+"5 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"42 C:\Users\sony\MPLABXProjects\PROJ.X\ssd.c
+[v _set_blink set_blink `(v  1 e 1 0 ]
+{
+"44
+} 0
+"156 C:\Users\sony\MPLABXProjects\PROJ.X\timer.c
+[v _restart_timer restart_timer `(v  1 e 1 0 ]
+{
+[v restart_timer@timer timer `uc  1 a 1 wreg ]
+[v restart_timer@timer timer `uc  1 a 1 wreg ]
+[v restart_timer@timer timer `uc  1 a 1 0 ]
+"169
+} 0
+"9 C:\Users\sony\MPLABXProjects\PROJ.X\adc.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"14
+} 0
+"22 C:\Users\sony\MPLABXProjects\PROJ.X\main.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"43
+} 0
+"139 C:\Users\sony\MPLABXProjects\PROJ.X\timer.c
+[v i1_stop_timer stop_timer `(v  1 e 1 0 ]
+{
+[v i1stop_timer@timer timer `uc  1 a 1 wreg ]
+[v i1stop_timer@timer timer `uc  1 a 1 wreg ]
+[v i1stop_timer@timer timer `uc  1 a 1 0 ]
+"152
+} 0
+"200
+[v _timer_ISR timer_ISR `(uc  1 e 1 0 ]
+{
+"233
+} 0
+"28 C:\Users\sony\MPLABXProjects\PROJ.X\adc.c
+[v _temperature_read temperature_read `(us  1 e 2 0 ]
+{
+[v temperature_read@pin pin `uc  1 a 1 wreg ]
+[v temperature_read@pin pin `uc  1 a 1 wreg ]
+[v temperature_read@pin pin `uc  1 a 1 25 ]
+"33
+} 0
+"28 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+{
+[v ___lwtoft@c c `ui  1 p 2 8 ]
+"31
+} 0
+"44 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 17 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 21 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 16 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 9 ]
+"73
+} 0
+"62 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 7 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 11 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 10 ]
+[v ___ftmul@exp exp `uc  1 a 1 6 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 0 ]
+[v ___ftmul@f2 f2 `f  1 p 3 3 ]
+"157
+} 0
+"56 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 4 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 8 ]
+[v ___ftdiv@exp exp `uc  1 a 1 7 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 3 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 8 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 11 ]
+"86
+} 0
+"62 E:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"15 C:\Users\sony\MPLABXProjects\PROJ.X\adc.c
+[v _ADC_Read ADC_Read `(us  1 e 2 0 ]
+{
+[v ADC_Read@ANC ANC `uc  1 a 1 wreg ]
+[v ADC_Read@ANC ANC `uc  1 a 1 wreg ]
+"17
+[v ADC_Read@ANC ANC `uc  1 a 1 3 ]
+"27
+} 0
+"68 C:\Users\sony\MPLABXProjects\PROJ.X\heater.c
+[v _set_temp_off set_temp_off `(v  1 e 1 0 ]
+{
+"71
+} 0
+"7 C:\Users\sony\MPLABXProjects\PROJ.X\eeprom.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@address address `uc  1 a 1 wreg ]
+[v eeprom_write@address address `uc  1 a 1 wreg ]
+[v eeprom_write@data data `uc  1 p 1 2 ]
+[v eeprom_write@address address `uc  1 a 1 3 ]
+"16
+} 0
+"53 C:\Users\sony\MPLABXProjects\PROJ.X\i2c.c
+[v _i2c_write_slave_address_with_write_req i2c_write_slave_address_with_write_req `(uc  1 e 1 0 ]
+{
+[v i2c_write_slave_address_with_write_req@address address `uc  1 a 1 wreg ]
+[v i2c_write_slave_address_with_write_req@address address `uc  1 a 1 wreg ]
+[v i2c_write_slave_address_with_write_req@address address `uc  1 a 1 1 ]
+"59
+} 0
+"27
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"30
+} 0
+"22
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"25
+} 0
+"32
+[v _i2c_restart i2c_restart `(v  1 e 1 0 ]
+{
+"35
+} 0
+"69
+[v _i2c_master_write i2c_master_write `(uc  1 e 1 0 ]
+{
+[v i2c_master_write@data data `uc  1 a 1 wreg ]
+[v i2c_master_write@data data `uc  1 a 1 wreg ]
+[v i2c_master_write@data data `uc  1 a 1 0 ]
+"75
+} 0
+"37
+[v _i2c_wait i2c_wait `(v  1 e 1 0 ]
+{
+"39
+} 0
+"8
+[v _i2c_master_init i2c_master_init `(v  1 e 1 0 ]
+{
+"20
+} 0
+"41 C:\Users\sony\MPLABXProjects\PROJ.X\heater.c
+[v _save_temp save_temp `(v  1 e 1 0 ]
+{
+[v save_temp@temp temp `s  1 p 2 0 ]
+"46
+} 0
+"105
+[v _alternate_on_off alternate_on_off `(v  1 e 1 0 ]
+{
+"117
+} 0
+"46 C:\Users\sony\MPLABXProjects\PROJ.X\ssd.c
+[v _alternate alternate `(v  1 e 1 0 ]
+{
+"51
+} 0
